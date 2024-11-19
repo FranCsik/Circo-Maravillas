@@ -69,7 +69,7 @@
   
   section.homePage h1 {
     font-size: 48px;
-    color: var(--text-color);
+    color: #FFFFFF;
   }
   
   section.homePage a, section.aboutUs a {
@@ -84,7 +84,7 @@
     transition: background-color 0.3s ease;
     padding: 10px 20px;
     text-decoration: none;
-    color: var(--text-color);
+    color: #FFFFFF;
   }
   
   section.aboutUs .item-1, section.objective .item-1 {
@@ -115,7 +115,7 @@
   
   .home h2, .home h3 {
     font-size: 34px;
-    color: var(--primary-color);
+    color: #FFFFFF;
   }
   
   @media(min-width: 600px) {
@@ -179,10 +179,10 @@ section.nosotros p{
     margin-top: 20px;
 }
 section.testimonios{
-    background-color: #FAFAFA;
+    background-color: var(--content-background-color);
 }
 section.testimonios h2{
-    color: #1565C0;
+    color: var(--primary-color);
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -361,6 +361,79 @@ section.testimonios .testimonio{
       margin-bottom: 50px;
     }
   }
+
+ /* Espectáculos */
+.espectaculos-title {
+  font-size: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 20px 0;
+}
+
+.espectaculos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 80px;
+  background-color: var(--background-color);
+}
+
+.espectaculo {
+  background-color: var(--content-background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.espectaculo img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.espectaculo h3 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.espectaculo p {
+  color: var(--text-color);
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Modo oscuro */
+body.dark-mode .espectaculo {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .espectaculos-container {
+  background-color: #121212;
+}
+
+/* Versión móvil */
+@media (max-width: 600px) {
+  .espectaculos-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .espectaculo img {
+    height: 150px;
+  }
+  .espectaculo h3 {
+    font-size: 20px;
+  }
+  .espectaculo p {
+    font-size: 14px;
+  }
+}
   
   /* Footer */
   footer {
@@ -417,8 +490,6 @@ section.testimonios .testimonio{
     }
   }
   
-}
-
 @media(min-width: 1000px){
     section.accesibilidad .items{
         display: grid;
