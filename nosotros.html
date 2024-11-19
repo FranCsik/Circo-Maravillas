@@ -14,18 +14,22 @@
 <body>
     <header>
         <nav>
-            <img src="src/img/circus-logo.png" alt="">
+            <img src="src/img/circus-logo.png" alt="Circo Maravillas Logo">
             <p>Circo Maravillas</p>
+            <button id="toggle-dark-mode">🌙 Modo Oscuro</button>
             <input type="checkbox" id="sidebar-active">
             <label for="sidebar-active" class="open-sidebar-button">
-              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+              </svg>
             </label>
             <label id="overlay" for="sidebar-active"></label>
             <div class="links-container">
               <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
               </label>
-        
               <ul>
                 <li class="mobile-categories"><a href="espectaculos.html">Espectáculos</a></li>
                 <li class="mobile-categories"><a href="ciudades.html">Ciudades</a></li>
@@ -33,7 +37,6 @@
                 <li class="mobile-categories"><a href="nosotros.html">Nosotros</a></li>
                 <li class="mobile-categories"><a href="contacto.html">Contacto</a></li>
               </ul>
-              
             </div>
         </nav>
     </header>
@@ -50,7 +53,7 @@
     <footer>
         <div class="footer-content">
           <div>
-            <p>Materira: Diseño y desarrollo web</p>
+            <p>Materia: Diseño y desarrollo web</p>
             <p>Curso: 492766</p>
             <p>Grupo: 3</p>
           </div>
@@ -58,8 +61,9 @@
             <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
           </div>
         </div>
-        <img src="src/img/LogoUADE.png" alt="uade-logo">
-      </footer>
+        <img src="src/img/LogoUADE.png" alt="Logo de la UADE">
+    </footer>
 
+    <script src="src/js/darkModeToggle.js"></script>
 </body>
 </html>

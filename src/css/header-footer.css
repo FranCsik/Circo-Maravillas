@@ -1,7 +1,6 @@
 :root {
   --color-1: #1565C0; 
-  --text-color: #000000; 
-  --background-color: #FFFFFF; 
+  --h-text-color: #000000; 
   --nav-background-color: #FFFFFF; 
   --nav-text-color: #5A6175; 
   --footer-background-color: #000000;
@@ -10,8 +9,7 @@
 
 body.dark-mode {
   --color-1: #BB86FC;
-  --text-color: #FFFFFF;
-  --background-color: #121212;
+  --h-text-color: #FFFFFF;
   --nav-background-color: #1F1F1F;
   --nav-text-color: #BBBBBB;
   --footer-background-color: #1F1F1F;
@@ -55,7 +53,7 @@ nav a {
   align-items: center;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  color: var(--text-color);
+  color: var(--h-text-color);
 }
 
 nav ul {
@@ -78,7 +76,7 @@ nav li {
 
 @media (max-width: 920px) {
   nav label.close-sidebar-button svg {
-    fill: var(--text-color);
+    fill: var(--h-text-color);
   }
 
   nav ul {
@@ -88,7 +86,7 @@ nav li {
   }
 
   nav li a {
-    color: var(--text-color);
+    color: var(--h-text-color);
   }
 
   nav input {
@@ -96,7 +94,7 @@ nav li {
   }
 
   nav svg {
-    fill: var(--text-color);
+    fill: var(--h-text-color);
   }
 
   nav .home-link {

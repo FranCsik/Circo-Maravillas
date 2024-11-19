@@ -5,6 +5,7 @@
     --primary-color: #1565C0; 
     --footer-background-color: #000000;
     --footer-text-color: #FFFFFF;
+    --content-background-color: #FFFFFF;
   }
   
   body.dark-mode {
@@ -13,6 +14,7 @@
     --primary-color: #BB86FC;
     --footer-background-color: #1F1F1F;
     --footer-text-color: #AAAAAA;
+    --content-background-color: #333333;
   }
   
   /* General */
@@ -148,7 +150,7 @@
   
   /* NOSOTROS */
   h1.nosotros-title {
-    color: var(--text-color);
+    color: white;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -164,7 +166,7 @@
   }
   
   section.nosotros {
-    background-color: var(--background-color);
+    background-color: var(--content-background-color);
     padding: 20px;
     display: inline-block;
   }
@@ -195,7 +197,7 @@
   
   /* CONTACTO */
   h1.contact-h1 {
-    color: var(--text-color);
+    color: white;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -211,7 +213,7 @@
   }
   
   section.contact {
-    background-color: var(--background-color);
+    background-color: var(--content-background-color);
     padding: 15px;
   }
   
@@ -248,7 +250,7 @@
   .formulario button {
     padding: 0.75rem;
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -262,7 +264,7 @@
   }
   
   section.accesibilidad {
-    background-color: var(--background-color);
+    background-color: var(--content-background-color);
   }
   
   section.accesibilidad h3 {
