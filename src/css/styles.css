@@ -169,19 +169,47 @@
     background-color: var(--content-background-color);
     padding: 20px;
     display: inline-block;
-  }
-  
-  section.nosotros .item-1 {
-    height: 500px;
-  }
-  
-  section.nosotros p {
+}
+
+section.nosotros .item-1{
+    height: 300px;
+}
+
+section.nosotros p{
     margin-top: 20px;
-  }
-  
-  @media(min-width: 750px) {
-    h1.nosotros-title {
-      margin-top: 70px;
+}
+section.testimonios{
+    background-color: #FAFAFA;
+}
+section.testimonios h2{
+    color: #1565C0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+section.testimonios .image{
+    text-align: center;
+}
+section.testimonios img{
+    width: 140px;
+    height: 140px;
+    align-items: center;
+    border-radius: 50%;
+}
+section.testimonios .text{
+    text-align: center;
+}
+section.testimonios p, section.testimonios strong{
+    padding: 20px 20px;
+}
+section.testimonios .testimonio{
+    margin-top: 50px;
+}
+
+@media(min-width: 750px){
+    h1.nosotros-title{
+        margin-top: 70px;
     }
     section.nosotros {
       display: inline-block;
@@ -190,8 +218,21 @@
       border-radius: 15px;
       margin: 15px auto;
     }
-    section.nosotros p {
-      font-size: 20px;
+}
+
+@media(min-width: 1000px){
+    section.testimonios .items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+        margin-bottom: 50px;
+        max-width: 1100px;
+
+    }
+    section.testimonios .testimonio{
+        width: 460px;
+        justify-self: center;
     }
   }
   
@@ -307,9 +348,6 @@
       border-radius: 15px;
       margin-bottom: 70px;
     }
-    section.nosotros p {
-      font-size: 10px;
-    }
   }
   
   @media(min-width: 1000px) {
@@ -379,3 +417,18 @@
     }
   }
   
+}
+
+@media(min-width: 1000px){
+    section.accesibilidad .items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 1100px;
+        height: 470px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+
