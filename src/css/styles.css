@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{font-family: "Poppins", sans-serif;}
+
+body{
+    background-color: #D32F2F;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+
+
+/*HOME PAGE*/
+
+section.homePage{
+    min-height: 442px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),     
+        url("../img/circus.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+}
+section.homePage .item-1{
+    padding: 20px;
+}
+
+section.homePage h1{
+
+    font-size: 48px;
+    color: #FAFAFA;
+}
+
+section.homePage a, section.aboutUs a{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 48px;
+    background-color: #1565C0;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+section.aboutUs .item-1, section.objective .item-1{
+    background-color: #FAFAFA;
+}
+
+section.aboutUs .text{
+    margin-bottom: 20px;
+}
+
+section.aboutUs p, section.objective p{
+    margin-top: 30px;
+    font-size: 16px;
+}
+section.aboutUs img, section.objective img{
+    max-width: 500px;
+    align-items: center;
+
+}
+section.aboutUs .item-1, section.objective .item-1{
+    padding: 20px;
+}
+section.objective img {
+    margin-top: 20px;
+}
+
+.home h2, .home h3{
+    font-size: 34px;
+    color: #1565C0;
+}
+
+@media(min-width: 600px){
+    section.homePage .item-1{
+        max-width: 500px;
+        margin: 100px 100px;
+    }
+}
+
+@media(min-width: 1000px){
+    section.aboutUs .item-1, section.objective .item-1{
+        display: flex;
+        width: 936px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    section.objective img {
+        margin-top: 0px;
+    }
+    section.objective .item-1{
+        flex-direction: row-reverse;
+    }
+    section.aboutUs .text, section.objective .text{
+        padding: 30px;
+    }
+    section.objective{
+        margin-bottom: 100px;
+    }
+}
+
+/*NOSOTROS*/
+h1.nosotros-title{
+    color: #FAFAFA;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 48px;
+}
+
+section.nosotros h2{
+    color: #1565C0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+section.nosotros {
+    background-color: #FAFAFA;
+    padding: 20px;
+    display: inline-block;
+}
+
+section.nosotros .item-1{
+    height: 500px;
+}
+
+section.nosotros p{
+    margin-top: 20px;
+}
+@media(min-width: 750px){
+    h1.nosotros-title{
+        margin-top: 70px;
+    }
+    section.nosotros {
+        display: inline-block;
+        width: 750px;
+        height: 300px;
+        border-radius: 15px;
+        margin: 15px auto;
+    }
+    section.nosotros p{
+        font-size: 20px;
+    }
+}
+
+
+/*CONTACTO*/
+h1.contact-h1{
+    color: #FAFAFA;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 48px;
+}
+
+section.contact h2{
+    color: #1565C0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+section.contact{
+    background-color: #FAFAFA;
+    padding: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formulario label {
+    font-weight: bold;
+    color: #1565c0; /* Azul */
+}
+
+.formulario input, .formulario textarea {
+    padding: 0.75rem;
+    border: 2px solid #1565c0;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+}
+
+.formulario input:focus, 
+.formulario textarea:focus {
+    border-color: #003c8f;
+}
+
+.formulario small {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.formulario button {
+    padding: 0.75rem;
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #003c8f;
+}
+@media(min-width: 750px){
+    section.contact {
+        margin: auto;
+        width: 750px;
+        border-radius: 15px;
+    }
+    section.nosotros p{
+        font-size: 10px;
+    }
+}
