@@ -502,10 +502,88 @@ body.dark-mode .espectaculos-container {
     }
 }
 
-
 .error-message {
   color: red;
   font-size: 0.9em;
   margin-top: 5px;
   display: none;
+}
+
+.success-message {
+  color: green;
+  font-size: 1em;
+  margin-top: 10px;
+  display: none;
+}
+
+/*localidades*/
+
+/* Estilos específicos para la sección de Compra de Localidades */
+.purchase-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: white; /* Cambiado a blanco */
+}
+
+/* Línea de tiempo personalizada */
+.timeline-purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 20px;
+    font-size: 1em;
+}
+
+.timeline-purchase-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+}
+
+.timeline-purchase-item .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de búsqueda */
+.search-section-purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.search-section-purchase select,
+.search-section-purchase button {
+    width: 150px; /* Ajuste de tamaño */
+    padding: 8px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.search-section-purchase select {
+    background-color: var(--content-background-color);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.search-section-purchase button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
 }
