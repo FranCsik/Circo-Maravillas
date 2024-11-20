@@ -88,7 +88,7 @@
   }
   
   section.aboutUs .item-1, section.objective .item-1 {
-    background-color: var(--background-color);
+    background-color: #FAFAFA;
   }
   
   section.aboutUs .text {
@@ -115,7 +115,7 @@
   
   .home h2, .home h3 {
     font-size: 34px;
-    color: #FFFFFF;
+    color: var(--primary-color);
   }
   
   @media(min-width: 600px) {
@@ -625,3 +625,111 @@ body.dark-mode .espectaculos-container {
       padding: 8px;
   }
 }
+
+
+
+/*CIUDADES*/
+section.cities {
+    background-color: var(--content-background-color);
+}
+
+section.cities h1{
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+.city .date{
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 123px;
+  height: 143px;
+  border-radius: 12%;
+}
+
+.city .date p{
+  color: var(--text-color);
+  padding-top: 5px;
+  font-size: 20px;
+  color: var(--content-background-color);
+}
+
+.city img{
+  max-width: 22px;
+  max-height: 22px;
+}
+
+.city{
+  display: flex;
+  flex-direction: row;
+}
+.city .text{
+  border: 1px solid #AAAAAA;
+  border-radius: 15px;
+}
+.city .button a{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 48px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.city .text{
+  padding: 20px;
+  width: 100%;
+}
+.city .icon-text{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.city p{
+  margin-left: 10px;
+}
+.filter-svg{
+  filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(87%) contrast(87%);
+}
+
+@media(min-width: 552px){
+  .city{
+    max-width: 552px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .city .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 148px;
+  }
+  .city .date{
+    height: 148px;
+  }
+  .city .icon-text{
+    margin-top: 5px;
+  }
+}
+
+@media(min-width: 1166px){
+  .cities-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1166px;
+    margin: auto;
+  }
+}
+

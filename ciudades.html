@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudades - Circo Maravillas</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/header-footer.css">
+    <link rel="stylesheet" href="src/styles/headerFooter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="src/img/circus-logo.png" alt="Circo Maravillas Logo">
+            <p><a href="index.html" style="text-decoration: none; color: inherit;">Circo maravillas</a></p>
+            <button id="toggle-dark-mode">🌙 Modo Oscuro</button>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+              </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+              <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+              </label>
+              <ul>
+                <li class="mobile-categories"><a href="espectaculos.html">Espectáculos</a></li>
+                <li class="mobile-categories"><a href="ciudades.html">Ciudades</a></li>
+                <li class="mobile-categories"><a href="localidades.html">Localidades</a></li>
+                <li class="mobile-categories"><a href="nosotros.html">Nosotros</a></li>
+                <li class="mobile-categories"><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="cities">
+        <h1>Ciudades</h1>
+        <div class="cities-container">
+            <div class="city">
+                <div class="date">
+                    <p>25</p>
+                    <p>Junio</p>
+                    <p>2025</p>
+                </div>
+                <div class="text">
+                    <div class="text-container">
+                        <strong>Buenos Aires</strong>
+                        <div class="icon-text">
+                            <img src="src/img/ticket.png" alt="">
+                            <p>20 entradas disponibles</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/calendar-regular.svg" class="filter-svg" alt="">
+                            <p>9:00 PM</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/location-dot-solid.svg" class="filter-svg" alt="">
+                            <p>Movistar Arena</p>    
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a class="button" href="localidades.html">Conocé más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="city">
+                <div class="date">
+                    <p>26</p>
+                    <p>Junio</p>
+                    <p>2025</p>
+                </div>
+                <div class="text">
+                    <div class="text-container">
+                        <strong>Buenos Aires</strong>
+                        <div class="icon-text">
+                            <img src="src/img/ticket.png" alt="">
+                            <p>25 entradas disponibles</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/calendar-regular.svg" class="filter-svg" alt="">
+                            <p>9:00 PM</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/location-dot-solid.svg" class="filter-svg" alt="">
+                            <p>Movistar Arena</p>    
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a class="button" href="localidades.html">Conocé más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="city">
+                <div class="date">
+                    <p>28</p>
+                    <p>Junio</p>
+                    <p>2025</p>
+                </div>
+                <div class="text">
+                    <div class="text-container">
+                        <strong>Lomas de Zamora</strong>
+                        <div class="icon-text">
+                            <img src="src/img/ticket.png" alt="">
+                            <p>15 entradas disponibles</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/calendar-regular.svg" class="filter-svg" alt="">
+                            <p>9:00 PM</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/location-dot-solid.svg" class="filter-svg" alt="">
+                            <p>Teatro Coliseo</p>    
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a class="button" href="localidades.html">Conocé más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="city">
+                <div class="date">
+                    <p>30</p>
+                    <p>Junio</p>
+                    <p>2025</p>
+                </div>
+                <div class="text">
+                    <div class="text-container">
+                        <strong>Adrogué</strong>
+                        <div class="icon-text">
+                            <img src="src/img/ticket.png" alt="">
+                            <p>12 entradas disponibles</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/calendar-regular.svg" class="filter-svg" alt="">
+                            <p>9:00 PM</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/location-dot-solid.svg" class="filter-svg" alt="">
+                            <p>Casa de la cultura</p>    
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a class="button" href="localidades.html">Conocé más</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="city">
+                <div class="date">
+                    <p>01</p>
+                    <p>Julio</p>
+                    <p>2025</p>
+                </div>
+                <div class="text">
+                    <div class="text-container">
+                        <strong>Rosario</strong>
+                        <div class="icon-text">
+                            <img src="src/img/ticket.png" alt="">
+                            <p>80 entradas disponibles</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/calendar-regular.svg" class="filter-svg" alt="">
+                            <p>9:00 PM</p>    
+                        </div>
+                        <div class="icon-text">
+                            <img src="src/img/location-dot-solid.svg" class="filter-svg" alt="">
+                            <p>Teatro Broadway</p>    
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a class="button" href="localidades.html">Conocé más</a>
+                    </div>
+                </div>
+                
+        </div>
+        </div> 
+    </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+          <div>
+            <p>Materia: Diseño y desarrollo web</p>
+            <p>Curso: 492766</p>
+            <p>Grupo: 3</p>
+          </div>
+          <div>
+            <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+          </div>
+        </div>
+        <img src="src/img/LogoUADE.png" alt="Logo de la UADE">
+    </footer>
+
+    <script src="src/js/darkModeToggle.js"></script>
+</body>
+</html>
