@@ -101,7 +101,7 @@
   }
   
   section.aboutUs img, section.objective img {
-    max-width: 500px;
+    max-width: 100%;
     align-items: center;
   }
   
@@ -488,6 +488,9 @@ body.dark-mode .espectaculos-container {
     footer img {
       margin: auto;
     }
+    .text p {
+      padding: 5px;
+    }
   }
   
 @media(min-width: 1000px){
@@ -586,4 +589,39 @@ body.dark-mode .espectaculos-container {
     border-radius: 4px;
     cursor: pointer;
     padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .purchase-title {
+      font-size: 1.8em; 
+      margin-top: 15px;
+  }
+
+  .timeline-purchase {
+      flex-direction: column; 
+      gap: 15px;
+      text-align: center;
+  }
+
+  .timeline-purchase-item {
+     width: 30%;
+  }
+
+  .timeline-purchase-item .circle {
+      width: 25px; 
+      height: 25px;
+      font-size: 0.9em;
+  }
+
+  .search-section-purchase {
+      flex-direction: column; 
+      gap: 10px;
+  }
+
+  .search-section-purchase select,
+  .search-section-purchase button {
+      width: 80%; 
+      font-size: 0.9em; 
+      padding: 8px;
+  }
 }
