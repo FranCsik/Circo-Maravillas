@@ -41,42 +41,163 @@
         </nav>
     </header>
 
-    <!-- Título centrado -->
     <h1 class="purchase-title">Compra de Localidades</h1>
 
-    <!-- Línea de tiempo -->
-    <div class="timeline-purchase">
-        <div class="timeline-purchase-item">Choose Time ✔️</div>
-        <div class="timeline-purchase-item"><span class="circle">1</span>Choose Seat</div>
-        <div class="timeline-purchase-item"><span class="circle">2</span>Checkout</div>
-        <div class="timeline-purchase-item"><span class="circle">3</span>Get Ticket</div>
+
+    <section class="localidades">
+        <div class="timeline-purchase">
+          <div class="timeline-purchase-item active">
+              <span class="circle">1</span>
+              <p>Seleccionar función</p>
+          </div>
+          <div class="timeline-purchase-item">
+              <span class="circle">2</span>
+              <p>Elegir asiento</p>
+          </div>
+          <div class="timeline-purchase-item">
+              <span class="circle">3</span>
+              <p>Realizar pago</p>
+          </div>
+          <div class="timeline-purchase-item">
+              <span class="circle">4</span>
+              <p>Confirmación</p>
+          </div>
+      </div>
+      <div class="search-section-purchase">
+        <select id="ubicacion">
+          <option value="" disabled selected>Selecciona tu provincia</option>
+          <option value="Buenos Aires">Buenos Aires</option>
+          <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+          <option value="Catamarca">Catamarca</option>
+          <option value="Chaco">Chaco</option>
+          <option value="Chubut">Chubut</option>
+          <option value="Córdoba">Córdoba</option>
+          <option value="Corrientes">Corrientes</option>
+          <option value="Entre Ríos">Entre Ríos</option>
+          <option value="Formosa">Formosa</option>
+          <option value="Jujuy">Jujuy</option>
+          <option value="La Pampa">La Pampa</option>
+          <option value="La Rioja">La Rioja</option>
+          <option value="Mendoza">Mendoza</option>
+          <option value="Misiones">Misiones</option>
+          <option value="Neuquén">Neuquén</option>
+          <option value="Río Negro">Río Negro</option>
+          <option value="Salta">Salta</option>
+          <option value="San Juan">San Juan</option>
+          <option value="San Luis">San Luis</option>
+          <option value="Santa Cruz">Santa Cruz</option>
+          <option value="Santa Fe">Santa Fe</option>
+          <option value="Santiago del Estero">Santiago del Estero</option>
+          <option value="Tierra del Fuego">Tierra del Fuego</option>
+          <option value="Tucumán">Tucumán</option>
+      </select>
+      <input type="date" id="fecha">
+      <select name="cantidad" id="cantidad">
+          <option value="" disabled selected>Cantidad</option>
+          <option value="1">1 Entrada</option>
+          <option value="2">2 Entradas</option>
+          <option value="3">3 Entradas</option>
+      </select>
+      <button type="button">Buscar</button>
+
+      </div>
+
+    </section>
+
+    <section id="resultado-busqueda" class="resultado-busqueda" style="display: none;">
+      <h1 class="resultado-titulo">Resultados de la búsqueda</h1>
+      <div class="evento-detalles">
+          <img src="src/img/evento.png" alt="Imagen del evento" class="evento-imagen">
+          <div class="info-evento">
+              <p><strong>Fecha:</strong> <span id="evento-fecha"></span></p>
+              <p><strong>Lugar:</strong> Movistar Arena</p>
+              <p><strong>Hora:</strong> 9 PM</p>
+              <button class="mapa-boton">Ver Mapa</button>
+          </div>
+      </div>
+
+      <!-- Modal para Ver Mapa -->
+      <div id="modalMapa" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Cómo llegar</h2>
+          <div class="modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.542014201572!2d-58.44576588423787!3d-34.58847598046674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabc3f246401%3A0xf853ca7b9a0a7b7e!2sHumboldt%20450%2C%20C1414CSJ%20CABA%2C%20Argentina!5e0!3m2!1sen!2sus!4v1684322330338!5m2!1sen!2sus"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p><strong>Dirección:</strong> Humboldt 450, C1414CSJ, CABA</p>
+            <p><strong>Medios de transporte disponibles:</strong></p>
+            <ul>
+              <li>Colectivos</li>
+              <li>Subte Línea B - Estación Dorrego</li>
+              <li>Tren Línea Urquiza</li>
+              <li>Tren Línea San Martín</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="seleccion-container">
+          <div class="mapa-asientos">
+              <!-- Asientos generados dinámicamente -->
+          </div>
+  
+          <div class="detalle-sectores">
+              <div class="sector" data-sector="delantero" data-precio="5200">
+                  <p>Campo delantero</p>
+                  <p><strong>$5000</strong> + $200 por servicio</p>
+              </div>
+              <div class="sector" data-sector="trasero" data-precio="4200">
+                  <p>Campo trasero</p>
+                  <p><strong>$4000</strong> + $200 por servicio</p>
+              </div>
+              <div class="sector" data-sector="preferencial" data-precio="6200">
+                  <p>Platea Preferencial</p>
+                  <p><strong>$6000</strong> + $200 por servicio</p>
+              </div>
+              <div class="sector" data-sector="vip" data-precio="7200">
+                  <p>Sector VIP</p>
+                  <p><strong>$7000</strong> + $200 por servicio</p>
+              </div>
+          </div>
+      </div>
+  
+      <div class="resumen-compra-card">
+          <h2 class="resumen-titulo">Tus entradas</h2>
+          <div class="cantidad-entradas">
+              <button class="cantidad-boton">-</button>
+              <span id="cantidad-seleccionada">0</span>
+              <button class="cantidad-boton">+</button>
+          </div>
+          <p id="asientos-seleccionados">Sin seleccionar</p>
+          <p id="precio-total">Total: $0</p>
+          <button class="comprar-boton">Comprar Entradas</button>
+      </div>
+
+    <div id="modalCompra" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>¡Compra realizada con éxito!</h2>
+        <div class="modal-body">
+          <p><strong>Evento:</strong> Circo Maravillas</p>
+          <p><strong>Fecha:</strong> <span id="compra-fecha"></span></p>
+          <p><strong>Lugar:</strong> Movistar Arena</p>
+          <p><strong>Sector:</strong> <span id="compra-sector"></span></p>
+          <p><strong>Cantidad de Entradas:</strong> <span id="compra-cantidad"></span></p>
+          <p><strong>Total Pagado:</strong> <span id="compra-total"></span></p>
+        </div>
+        <button id="cerrarModalCompra" class="comprar-boton">Cerrar</button>
+      </div>
     </div>
 
-    <!-- Sección de búsqueda con desplegables y botón en línea -->
-    <section class="search-section-purchase">
-        <select name="ubicacion" id="ubicacion">
-            <option value="">Ubicación</option>
-            <option value="ciudad1">Ciudad 1</option>
-            <option value="ciudad2">Ciudad 2</option>
-            <option value="ciudad3">Ciudad 3</option>
-        </select>
-
-        <select name="fecha" id="fecha">
-            <option value="">Fecha</option>
-            <option value="fecha1">Fecha 1</option>
-            <option value="fecha2">Fecha 2</option>
-            <option value="fecha3">Fecha 3</option>
-        </select>
-
-        <select name="cantidad" id="cantidad">
-            <option value="">Cantidad</option>
-            <option value="1">1 Entrada</option>
-            <option value="2">2 Entradas</option>
-            <option value="3">3 Entradas</option>
-        </select>
-
-        <button type="button">Buscar</button>
-    </section>
+  </section>
 
     <footer>
         <div class="footer-content">
@@ -91,7 +212,9 @@
         </div>
         <img src="src/img/LogoUADE.png" alt="Logo de la UADE">
     </footer>
-
+    <script src="src/js/seatsValidation.js"></script>
     <script src="src/js/darkModeToggle.js"></script>
+    <script src="src/js/modalMapa.js"></script>
+    <script src="src/js/compra.js"></script>
 </body>
 </html>
