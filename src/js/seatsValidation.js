@@ -23,6 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        if(fecha < new Date().toISOString().split('T')[0]){
+            alert("La fecha seleccionada no puede ser anterior a la fecha actual.");
+            return;
+        }
+
         // Actualizar valores dinámicos
         eventoFecha.textContent = fecha; // Mostrar la fecha seleccionada
         cantidadEntradas = cantidad; // Sincronizar cantidad de entradas
